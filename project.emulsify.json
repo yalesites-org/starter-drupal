@@ -1,0 +1,10 @@
+{
+  "project": {
+    "platform": "drupal",
+    "name": "YaleSites Drupal Starter",
+    "machineName": "yalesites-drupal-starter"
+  },
+  "starter": {
+    "repository": "https://github.com/yalesites-org/starter-drupal.git"
+  }
+}
