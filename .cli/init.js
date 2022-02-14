@@ -106,7 +106,7 @@ const applyToYmlFile = (filePath, functor) => {
     return;
   }
 
-  const file = yaml.safeLoad(fs.readFileSync(filePath, 'utf8'));
+  const file = yaml.load(fs.readFileSync(filePath, 'utf8'));
   fs.writeFileSync(filePath, yaml.safeDump(functor(file)));
 };
 
