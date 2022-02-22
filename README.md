@@ -6,6 +6,22 @@ In order to initialize themes from this starter, you must have the [Emulsify CLI
 
 ## Usage
 
+<details><summary>Prerequisites</summary>
+
+Each environment that needs to pull @yalesites-org packages from GitHub needs to be authenticated using a "Personal Access Token". This only needs to be done once per-environment.
+
+- Go to `https://github.com/settings/tokens/new`
+  - In the "Note" field add something like "YaleSites GitHub Packages"
+  - Choose an expiration value
+  - Check the box for "write:packages" (this will automatically check all of the "repo" boxes as well)
+  - Click "Generate token"
+- On your local machine, create an environment variable. This process varies depending on the shell and operating system you use. It will be something similar to this though: `export KEY=value`.
+  - The `key` for YaleSites projects needs to be `YALESITES_BUILD_TOKEN`
+  - The `value` is the token you created above
+- Done!
+
+</details>
+
 ### Initializing a theme
 
 You can initialize a theme as a direct part of a Drupal site, or as a stand-alone project.
