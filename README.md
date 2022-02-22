@@ -6,18 +6,24 @@ In order to initialize themes from this starter, you must have the [Emulsify CLI
 
 ## Usage
 
-### As a standalone theme (not in a Drupal project)
+### Initializing a theme
+
+You can initialize a theme as a direct part of a Drupal site, or as a stand-alone project.
+
+<details><summary>As a standalone theme (not in a Drupal project)</summary>
 
 Move ot the location you want to initialize the theme, then run the initi script below. (Choose your own theme name.)
 
 `emulsify init --starter https://github.com/yalesites-org/starter-drupal.git --checkout main "Theme Name" . --platform drupal`
 
 _NOTE: Since we're not in the context of a web project, we pass the 'drupal' platform as our starter of choice._
+</details>
 
-### Inside an existing Drupal Site
+<details><summary>Inside an existing Drupal Site</summary>
 Move into a Drupal project and run the init script below. (Choose your own theme name.)
 
 `emulsify init --starter https://github.com/yalesites-org/starter-drupal.git --checkout main "Theme Name"`
+</details>
 
 ### Installing a system
 
